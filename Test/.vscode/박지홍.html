@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button
+        {
+            cursor : pointer;
+        }
+        button :hover
+        {
+            opacity: 0.5;
+        }
+    </style>
+        <div id="di">
+            <p id = "txt"></p>
+            <button onclick="test()">INSERT</button>
+        </div>
+       
+        <script>
+            
+            function test()
+            {
+                //alert()함수를 이용하여 "hello world" 출력
+                alert("hello world");
+                //console.log()함수를 이용하여 "hello world" 기록
+                console.log("hello world");
+                //id가 "txt"인 요소를 찾아 innerHTML을 이용하여 "hello world"를 삽입
+                document.getElementById("txt").innerHTML = "hello world";
+            }
+
+        </script>
+ 
+</body>
+</html>

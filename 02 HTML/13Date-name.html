@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- date = 속성, profile = 변수라 생각하자. -->
+<div data-profile = "홍길동">홍길동</div>
+<div data-profile = "44">44</div>
+<div data-profile = "대구">대구</div>
+<div data-profile = "컴퓨터공학">컴퓨터공학</div>
+
+</body>
+<!-- 바디 밖으로 자바 스크립트를 사용한다. -->
+<script>
+  // document.querySelectorAll('div')
+  // 반복문을 써도 된다.
+  const els = document.querySelectorAll('div')
+  els.forEach(el => {console.log(el.dataset.profile); })
+
+</script>
+
+</html>

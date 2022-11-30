@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>순서가 있는 리스트</h1>
+  <ul style="list-style:none; padding:0px">
+    <!-- 기본 도트형을 없애고 싶다면,<ul style="list-style:none;"> 이렇게 적으면된다 CSS에서도 가능. -->
+    <!-- 여백을 없애는 방법 padding:0px -->
+    <li>숫자(기본설정)</li>
+    <ol>
+      <li>사과</li>
+      <li>멜론</li>
+      <li>바나나</li>
+    </ol><br>
+    영어 대문자
+    <ol type ="A">
+      <li>수박</li>
+      <li>참외</li>
+      <li>옥수수</li>
+    </ol><br>
+    영어 소문자
+    <ol type="a">
+      <li>감자</li>
+      <li>상추</li>
+      <li>고구마</li>
+    </ol><br>
+    로마 대문자
+    <ol type="I">
+      <li>오이</li>
+      <li>배추</li>
+      <li>시금치</li>
+    </ol><br>
+    로마 소문자
+    <ol type="i">
+      <li>고추</li>
+      <li>호박</li>
+      <li>양파</li>
+    </ol><br>
+  </ul>
+  
+  <!-- ul>li$*3{Content$} 이렇게 적으면  리스트를 적어준다. -->
+  <ul>
+    <li1>Content1</li1>
+    <li2>Content2</li2>
+    <li3>Content3</li3>
+  </ul>
+  <hr>
+
+  <!-- ul>h2{제목}+li*3>ol{제목$}>li*3{내용$} -->
+  <ul>
+    <h2>제목</h2>
+    <li>
+      <ol>제목1
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+      </ol>
+    </li>
+    <li>
+      <ol>제목2
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+      </ol>
+    </li>
+    <li>
+      <ol>제목3
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+      </ol>
+    </li>
+  </ul>
+
+<!--   ul>li$*3>ol{제목$}>li*3{내용$} -->
+  <ul>
+    <li1>
+      <ol>제목1
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+      </ol>
+    </li1>
+    <li2>
+      <ol>제목2
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+      </ol>
+    </li2>
+    <li3>
+      <ol>제목3
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+      </ol>
+    </li3>
+  </ul>
+
+  <!-- ol>li*5{메뉴$} -->
+
+  <!-- ol>li*5{메뉴$}>ul>li*3{서브메뉴$} -->
+  
+  <!-- ol>li*5>a{메뉴$} -->
+  
+  <!-- ol>li*5>a{메뉴$}+ul*3{서브메뉴$} -->
+  
+  <!-- ol>li*5.menu1>a{메뉴$}+ul.menu2>li*3{서브메뉴$} -->
+  <ol>
+    <li class="menu1">
+      <a href="">메뉴1</a>
+      <ul class="menu2">
+        <li>서브메뉴1</li>
+        <li>서브메뉴2</li>
+        <li>서브메뉴3</li>
+      </ul>
+    </li>
+    <li class="menu1">
+      <a href="">메뉴2</a>
+      <ul class="menu2">
+        <li>서브메뉴1</li>
+        <li>서브메뉴2</li>
+        <li>서브메뉴3</li>
+      </ul>
+    </li>
+    <li class="menu1">
+      <a href="">메뉴3</a>
+      <ul class="menu2">
+        <li>서브메뉴1</li>
+        <li>서브메뉴2</li>
+        <li>서브메뉴3</li>
+      </ul>
+    </li>
+    <li class="menu1">
+      <a href="">메뉴4</a>
+      <ul class="menu2">
+        <li>서브메뉴1</li>
+        <li>서브메뉴2</li>
+        <li>서브메뉴3</li>
+      </ul>
+    </li>
+    <li class="menu1">
+      <a href="">메뉴5</a>
+      <ul class="menu2">
+        <li>서브메뉴1</li>
+        <li>서브메뉴2</li>
+        <li>서브메뉴3</li>
+      </ul>
+    </li>
+  </ol>
+
+ 
+
+
+</body>
+</html>

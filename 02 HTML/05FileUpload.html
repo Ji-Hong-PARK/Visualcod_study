@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- 파일을 보낼때에는 post로 꼭 지정해야지만 돈다. -->
+  <form action="test.jsp" method="post" enctype="multipart/form-data">
+    <!-- 업로드 -->
+    FILE : <input type="file" name="upload1"><br>
+    FILE : <input type="file" name="upload2" multiple><br> <!-- 여러개 파일을 한번에 잡을수 있는 설정 -->
+    <input type="submit" value="upload">
+
+  </form>
+  
+</body>
+</html>

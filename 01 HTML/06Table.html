@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <table border="1" width="400px" height="500px" align="center">
+    <caption>테이블 제목</caption>
+    <tr><!--행-->
+      <td>1</td> <!--셀-->
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr><!--행-->
+      <td>4</td> <!--셀-->
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr><!--행-->
+      <td>7</td> <!--셀-->
+      <td>8</td>
+      <td>9</td>
+    </tr>
+
+  </table>
+  <hr>
+  <!-- 4행 2열짜리 테이블 만들기 (기본코드, emmet자동완성)-->
+  <table border="1" width="400px" height="500px" align="center">
+    <caption>선생님이 만들라 하는것</caption>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  
+  </table>
+  <!--에밋을 이용 table>tr$*4>td{$}*2 -->
+  <!-- 
+    <table>
+    <tr1>
+      <td1></td1>
+      <td2></td2>
+    </tr1>
+    <tr2>
+      <td1></td1>
+      <td2></td2>
+    </tr2>
+    <tr3>
+      <td1></td1>
+      <td2></td2>
+    </tr3>
+    <tr4>
+      <td1></td1>
+      <td2></td2>
+    </tr4>
+  </table>
+   -->
+
+
+  <style>
+    table
+    {
+      border : 1px solid gray;
+      width : 500px;
+      height : 500px;
+      padding : 10px;
+    }
+    td{
+      border : 1px solid blue; 
+      text-align : center; 
+      font-size : 3rem;
+    }
+  </style>
+    <!-- table>tr$*4>td{$}*2  -->
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+    </table>
+
+</body>
+</html>
