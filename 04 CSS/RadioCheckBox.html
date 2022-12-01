@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    input[type='radio']+label {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 2px solid darkgray;
+      background-image: url("/image/android2.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    input[type='radio']:checked+label {
+      background-image: url("/image/apple.svg");
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <input type="checkbox" id="chk">
+    <label for="chk"></label>&nbsp;<span>비행 예약여부</span>
+  </div>
+<hr><br>
+  <div>
+    <div>
+      <input type="radio" id="Android" name="phone" value="Android" />
+      <label for="Android"></label>갤럭시
+    </div>
+    </div>
+    <div>
+      <input type="radio" id="Apple" name="phone" value="Apple" />
+      <label for="Apple"></label>애플폰
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
