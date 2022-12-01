@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  div{
+    width: 100px;height: 100px;
+    background-color: orange;
+    margin: 5px;
+    /* 컨텐츠만큼의 길이로 바뀜. */
+    display: inline;
+  }
+  span{
+    width: 100px;height: 100px;
+    background-color: orange;
+    margin: 5px;
+    /* 디스플레이를 블럭으로 지정한다. 그러면 아래칸으로 내려가진다 */
+    /* 블럭형태는  한줄을 다 쓴다. */
+    /* display: block; */
+    /* 만약에 블럭이긴하지만 한줄에 다같이 쓰고싶다면 inline으로 바꾸면된다  */
+    display: inline;
+  }
+</style>
+</head>
+
+<body>
+
+  <div>HELLO WORLD 내가 적는만큼만 늘어남.</div>
+  <div>HELLO WORLD</div>
+  <div>HELLO WORLD</div>
+  <hr>
+  <span>HELLO WORLD</span><span>HELLO WORLD</span><span>HELLO WORLD</span>
+  test  test  test
+
+
+</body>
+</html>

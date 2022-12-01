@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      background-color: orange;
+
+    }
+    #d1{
+      width: 300px;
+      height: 300px;
+     
+     
+      /* 패딩 */
+      padding-top: 10px;
+      padding-left: 50px;
+      padding-right: 30px;
+      padding-bottom: 100px;
+      /* box-sizing: border-box; */
+      
+      /*마진 */
+      /* margin-top: 100px;
+      margin-left: 100px;
+      margin-bottom: 200px; */
+    }
+    .parent{
+      width: 500px;
+      height: 500px;
+      background-color: green;
+    }
+    .child{
+      width: 200px;
+      height: 200px;
+      background-color: royalblue;
+      
+      /* 패딩 */
+      padding-top: 50px;
+      padding-left: 60px;
+      padding-right: 500px;
+
+      /* 마진 */
+      /* margin-top: 20px;
+       margin-left: 100px;
+      margin-right: 500px;
+      margin-bottom: 100px; */
+    }
+    .d2{
+      width: 100px;
+      height: 100px;
+    }
+    .d2{
+      /* 마진을 활용 */
+      /* top, right,bottom,left */
+      /* margin: 10px 20px 30px 40px; */
+      /* top 10px, right 20px, bottom 30px left 20px */
+      /* margin: 10px 20px 30px; */
+      /* top,tottom : 10px, left,right : 20px */
+      /* margin: 10px 20px; */
+     
+      /*박스가 가운데로 옮기기 위해서. */
+      /* margin: 10px auto; */
+      
+
+      /* 패딩을 활용. */
+      /* top right bottom left */
+      /* padding : 10px 20px 30px 40px; */
+      /* top left(right) bottom  하나가 없으면 left,right같이 됨.*/
+      /* padding: 10px 20px 30px; */
+      /* top,tottom : 10px, left,right : 20px */
+      /* padding: 10px 20px; */
+      /* 위아래좌우  대신 auto를 쓰면 0값이 된다.*/
+      padding: 10px;
+
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id = "d1">Hello World</div>
+  <hr>
+
+  <div class="parent">
+    <div class="child">쉬는시간~~ </div>
+  </div>
+  <hr>
+
+  <div class ="d2"></div>
+  <div class ="d2"></div>
+  
+</body>
+</html>
