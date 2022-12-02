@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0px;
+      /* 보기 어려울때는 보더를 만들어서 ul태그와 li태그 비교하면서 하자 */
+      border: 0px solid black;
+      display: flex;
+      /* 리스트안에 a태그가 있는거다  */
+      justify-content: space-evenly;
+      text-align: center;
+
+    }
+
+    .menu {
+      width: auto;
+      
+      
+
+    }
+
+    .menu>li {
+      /* 여기를 건드리면 메뉴창 전체가 맞춰지는데 */
+      /* 리스트의 영역을 200px로 맞춘다. */
+      width: 700px;
+      /* text-align: center;   리스트안에  센터를 맞춘다.(ul태그로 센터로 맞춰도 괜찮다.)*/
+      font-size: 2rem;
+      background-color: lightgrey;
+     
+      
+      
+
+    }
+
+    .menu>li>a {
+      /* 여기를 건드리면 메뉴창 하위 서브메뉴창이 움직인다. */
+      display: block;
+      border: 1px solid black;
+      background-color: yellow;
+      text-align: center;
+
+
+      
+    }
+
+    .submenu {
+      /* 스타일을 더 입혀도된다. */
+      /* display: block; 블럭형으로 맞추면 모두 보이기가 되고 none가되면  메뉴창만 보인다. */
+      display: none;
+      font-size: 1.5rem;
+      position: absolute;
+      width: 100%;
+      
+    }
+
+    .menu>li:hover .submenu {
+      /* li리스트를 hover로 마우스가 가면 메뉴창이 보이게 한다. */
+      /* width: 700px; */
+      display: flex;
+      border: 2px solid red;
+      border-radius: 10px;
+      /* 보더 박스를 연하게 만드는법 */
+      opacity: 0.5;
+      position: absolute;
+      
+      
+    }
+    .submenu>li{
+      width: 270px;
+      
+    }
+  
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ul.menu>li*2>a+ul.submenu>li*3{submenu$} -->
+  <ul class="menu">
+    <li>
+      <a href="">아카데미소개</a>
+      <ul class="submenu">
+        <li><a href="">코리아IT소개</a></li>
+        <li><a href="">히스토리</a></li>
+        <li><a href="">언론보도</a></li>
+        <li><a href="">강사소개</a></li>
+        <li><a href="">교육시설안내</a></li>
+        <li><a href="">오시는 길</a></li>
+        <li><a href="">학생관리시스템</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">IT교육과정</a>
+      <ul class="submenu">
+        <li><a href="">기초 코딩</a></li>
+        <li><a href="">웹/앱개발</a></li>
+        <li><a href="">빅테이터.AI</a></li>
+        <li><a href="">정보보안 전문가</a></li>
+        <li><a href="">스킬업단과</a></li>
+        <li><a href="">자격증 과정</a></li>
+        <li><a href="">네트워크 관리자</a></li>
+        <li><a href="">서버 관리자</a></li>
+        <li><a href="">강사취업사관학교</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">국비지원과정</a>
+      <ul class="submenu">
+        <li><a href="">국비지원 교육과정</a></li>
+        <li><a href="">실업자 국비과정 안내</a></li>
+        <li><a href="">재직자 국비과정 안내</a></li>
+        <li><a href="">과정평가형 과정</a></li>
+        <li><a href="">신사업국비과정</a></li>
+        <li><a href="">국비지원과정 조회하기</a></li>
+
+      </ul>
+    </li>
+    <li>
+      <a href="">커뮤니티</a>
+      <ul class="submenu">
+        <li><a href="">취업생 인터뷰</a></li>
+        <li><a href="">수강생 인터뷰</a></li>
+        <li><a href="">강사 인터뷰</a></li>
+        <li><a href="">수강생 후기</a></li>
+        <li><a href="">포토스토리</a></li>
+        <li><a href="">공지사항</a></li>
+        <li><a href="">특강&세미나</a></li>
+        <li><a href="">영상으로보는 IT</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="">프로젝트</a>
+      <ul class="submenu">
+        <li><a href="">프로젝트 작품</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="">취업지원센터</a>
+      <ul class="submenu">
+        <li><a href="">취업프로그램</a></li>
+        <li><a href="">코리아추천특채전형</a></li>
+        <li><a href="">취업현황</a></li>
+        <li><a href="">채용정보</a></li>
+        <li><a href="">실전 모의면접</a></li>
+        <li><a href="">산학협력현황</a></li>
+        <li><a href="">자격증정보</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="">고객상담센터</a>
+      <ul class="submenu">
+        <li><a href="">수강료 조회</a></li>
+        <li><a href="">내게맞는교육과정찾기</a></li>
+        <li><a href="">실시간방문예약</a></li>
+        <li><a href="">시간표조회</a></li>
+        <li><a href="">지점별위치조회</a></li>
+        <li><a href="">온라인 결제</a></li>
+        <li><a href="">고객칭찬 / 불편접수</a></li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+
+</html>

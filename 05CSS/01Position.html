@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 3000px;
+    }
+    div{
+      width: 200px;
+      height: 200px;
+      border: 1px solid gray;
+      position: static; 
+      font-size: 3rem;
+    }
+    #d1{
+      /* 부모테이블로부터 움직이는게  absolute relative 이다 
+          부모테이블로부터 독립적으로 움직이는게 엡솔루트랑 유사하지만 다른게 fixed 이다.*/
+      /*  위에 포지션 스테틱으로 묶여있는걸 position: relative; 이걸 쓰므로 고정된 위치에서 옮길수있다.*/
+      /* 원래있던  스테틱으로 설정되어있던 위치에서 옮겨진다. top,left를 쓰면*/
+      /* position: absolute;는 스테틱위치에서 따로 빠지는 ... */
+
+      /* position: relative; */ 
+      /* position: absolute; */
+      position: fixed;
+      background-color: orange;
+      /* top: 10px;*/
+      left: 70%;
+      
+    }
+    #d2{
+      /* position: relative; */
+      position: absolute;
+      background-color: violet;
+      top: 100px;
+      left: 100px;
+    }
+    #d3{
+      /* position: relative; */
+      position: absolute;
+      background-color: red;
+      top: 30%;
+      left: 20%;
+    }
+    #d4{
+      position: relative;
+      background-color: blue;
+      /* position: absolute; */
+      top: 50%;
+      left: 50%;
+
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 
+    Position : 박스의 위치(block 태그 기준)를 지정할때 사용하는 속성
+    static(기본) : viewport를 기준으로 수직으로 순서대로 연결
+    relative : 특정 HTML요소를 기본위치로 잡고 그 위치를 기준으로 현재 박스 위치를 지정(상대위치)
+    absolute : 특정 HTML요소를 기본위치로 잡고 그 위치를 기준으로 현재 박스 위치를 지정(상대위치 - 상위태그가 없을시 viewport가 기준)
+    fixed : viewport를 기준으로 연결(절대 위치)
+   -->
+   <div id="d1">D1</div>
+   <div id="d2">D2</div>
+   <div id="d3">D3</div>
+   <div id="d4">D4</div>
+
+</body>
+</html>

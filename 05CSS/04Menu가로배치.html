@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{
+      list-style: none;
+      padding: 0px;
+      /* 보기 어려울때는 보더를 만들어서 ul태그와 li태그 비교하면서 하자 */
+      border: 1px solid gray;
+      display: flex;
+      /* 리스트안에 a태그가 있는거다  */
+      justify-content: space-evenly;
+      text-align: center;
+
+    }
+    .menu{
+      width: 500px;
+
+    }
+    .menu>li{
+      /* 리스트의 영역을 200px로 맞춘다. */
+      width: 200px;
+      /* text-align: center;   리스트안에  센터를 맞춘다.(ul태그로 센터로 맞춰도 괜찮다.)*/
+    }
+    .menu>li>a{
+      display: block;
+      border: 1px solid red;
+    }
+    .submenu{
+      /* 스타일을 더 입혀도된다. */
+      /* display: block; 블럭형으로 맞추면 모두 보이기가 되고 none가되면  메뉴창만 보인다. */
+      display: none;
+    }
+    .menu>li:hover .submenu{
+      /* li리스트를 hover로 마우스가 가면 메뉴창이 보이게 한다. */
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ul.menu>li*2>a+ul.submenu>li*3{submenu$} -->
+  <ul class="menu">
+    <li>
+      <a href="">Menu1</a>
+      <ul class="submenu">
+        <li><a href="">submenu1</a></li>
+        <li><a href="">submenu2</a></li>
+        <li><a href="">submenu3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">Menu2</a>
+      <ul class="submenu">
+        <li><a href="">submenu1</a></li>
+        <li><a href="">submenu2</a></li>
+        <li><a href="">submenu3</a></li>
+      </ul>
+    </li>
+  </ul>
+  
+</body>
+</html>
