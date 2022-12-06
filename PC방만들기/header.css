@@ -1,20 +1,14 @@
 header{
-  height: 40px;
-  border: 1px solid gray;
+  height: 60px;
+  border: 3px solid red;
   display: flex;
   justify-content: space-between;
-  /* 중앙에서 배치한다. */
   align-items: center;
   margin-bottom: 5px;
-
 }
-header>#logo{
-
-}
-header img{}
-
-header>ul{
-display: flex;
-width: 400px;
-justify-content: space-between;
+header >.pcbangmenu{
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  border : 1px solid gray;
 }

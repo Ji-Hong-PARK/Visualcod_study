@@ -5,16 +5,3 @@ body{
   font-weight: 500;
   line-height: 20px;
 }
-/* ul{
-  list-style: none;
-  padding-left: 0px;
-
-} */
-a{
-  text-decoration: none;
-  color: black;
-}
-
-header,nav,footer,.main-contets{
-  padding: 0px 150px;
-}
