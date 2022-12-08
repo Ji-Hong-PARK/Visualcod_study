@@ -1,0 +1,33 @@
+
+    .box{
+      border: 1px solid gray;
+      width: 150px;
+      height: 800px;
+      display:  flex;
+      justify-content: center;
+      position: relative;
+    }
+    .box>#ball{
+      /* border: 1px solid gray; */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: orange;
+      position: absolute;
+      top: 0px;
+    }
+    @keyframes moving1{
+      0%{top: 0px; animation-timing-function: ease-in;}
+      25%{top: 700px; animation-timing-function: ease-out;}
+      50%{top: 350px; animation-timing-function: ease-in;}
+      75%{top: 700px; animation-timing-function: ease-out;}
+      100%{top:0px; animation-timing-function: ease-in;}
+    }
+    .box>#ball{
+    animation-name: moving1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /*animation-play-state: paused;   애니메이션을 포우즈로 잡아준다.  */
+    animation-play-state: paused;  
+    }
+

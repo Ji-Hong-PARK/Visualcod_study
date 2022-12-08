@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td{
+      width: 35px;
+      height: 35px;
+      border: 1px solid ;
+      text-align: center;
+    }
+    caption{
+      border: 1px solid;
+      height: 35px;
+      line-height: 35px;
+      
+    }
+    /* 이렇게 하면 블럭형이랑 자꾸 아래로 나오는데 이게 싫다면 아래처럼 추가해보자. */
+    .output{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    table{
+      margin: 15px;
+    }
+
+   </style>
+</head>
+<body>
+
+  <!-- 
+    2 - 9단까지 구구단을 가로배치하여 한번에 출력하는 자바스크립트 함수를 만들어보세요
+    태그는 table, tr, td 이용
+    스타일은 자유롭게.
+   -->
+
+
+
+   <script>
+    // 반복문을 사용?
+    let googoo = function(){
+    
+    for(dan=1; dan<10; dan++){
+
+      let tblCode = '<table>'
+        tblCode += '<caption>' + dan + '단</caption>';
+
+      for(i=1; i<10; i++){
+        tblCode += '<tr>';
+          tblCode += '<td>' + dan + '</td>';
+          tblCode += '<td>' + i + '</td>';
+          tblCode += '<td>' + dan * i + '</td>';
+        tblCode += '</tr>';
+      }
+      tblCode += '</table>';
+    }
+    
+  }
+  googoo();
+
+  </script>
+
+  
+</body>
+</html>

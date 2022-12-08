@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    //1 번째 함수 사용방법
+
+    function func1(){ //함수 선언
+      alert("FUNC1 호출");
+    }
+    func1(); //함수 호출
+
+
+    //2번째 함수 사용방법
+
+    function func2(a,b){
+      // alert(a+b);
+      return a+b;  //리턴을 사용해도 된다.
+    }
+    let result  = func2(10,20);
+    alert("func2 호출 result = " + result);
+
+
+    //3번째 함수 사용방법 <-이방법을 사용할것이다.
+
+    let func3 = function(){
+      alert("func3 호출");
+    };
+    func3();
+    
+  </script>
+  
+</body>
+</html>
