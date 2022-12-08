@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    div{
+    body{
+      width: 1500px;
+    }
+    div {
       margin: 10px;
     }
-    .btn{
+
+    .btn {
       width: 100px;
       height: 30px;
       background-color: lightgray;
@@ -18,16 +23,60 @@
       border-radius: 10px;
       cursor: pointer;
       font-weight: 700;
+      text-align: center;
+      position: relative;
+
     }
-    .btn--style1{background-color: red;}
-    .btn--style2{background-color: orange;}
-    .btn--style3{background-color: yellow;}
-    .btn--style4{background-color: green;}
-    .btn--style5{background-color: blue;}
-    .btn--style6{background-color: darkblue;}
-    .btn--style7{background-color: violet;}
+
+    .btn--style1 {
+      background-color: red;
+      width: 1000px;
+      height: 100px;
+    }
+
+    .btn--style2 {
+      background-color: orange;
+    }
+
+    .btn--style3 {
+      background-color: yellow;
+    animation-name: BOOM;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+      
+    }
+    @keyframes  BOOM{
+      0%{left: 0px; animation-timing-function: ease-in;}
+      25%{left: 700px; animation-timing-function: ease-out;}
+      50%{left: 350px; animation-timing-function: ease-in;}
+      75%{left: 700px; animation-timing-function: ease-out;}
+      100%{left:0px; animation-timing-function: ease-in;}
+      }
+
+    .btn--style4 {
+      background-color: green;
+    }
+
+    .btn--style5 {
+      background-color: blue;
+    }
+
+    .btn--style6 {
+      background-color: darkblue;
+    }
+
+    .btn--style7 {
+      background-color: violet;
+    }
+
+    .fs-xl{
+      font-size: 1.2rem;
+    };
+    
+
   </style>
 </head>
+
 <body>
   <div class="btn">BUTTON</div>
   <div class="btn">BUTTON</div>
@@ -36,6 +85,50 @@
   <div class="btn">BUTTON</div>
   <div class="btn">BUTTON</div>
   <div class="btn">BUTTON</div>
-  
+
+  <script>
+    const btnEls = document.querySelectorAll('.btn');
+    btnEls.forEach((btnEl, Idx) => {
+      // console.log(Idx);
+      // console.log(btnEl);
+      // 이벤트이름 : click
+      btnEl.addEventListener('click', () => {
+        // alert("클릭됨!!");
+        if(!btnEl.classList.contains(`btn--style${Idx+1}`)){ //btn--style이 안들어가 있다면
+          // btn--style을 넣어주겟다.
+          btnEl.classList.add(`btn--style${Idx+1}`);
+          btnEl.classList.add(`fs-xl`);
+
+        }else{  //btn-- styel이 들어가 있다면
+          btnEl.classList.remove(`btn--style${Idx+1}`);
+          btnEl.classList.remove(`fs-xl`);
+            // btn --style을 제거하겠다.
+        }
+
+      }) //btnEl 이벤트 끝
+
+    }); //btnEl forEach 끝
+
+
+
+    // 연습
+    btnEl.addEventListener('click', () => {
+        // alert("클릭됨!!");
+        if(!btnEl.classList.contains(`btn--style3`)){ //btn--style이 안들어가 있다면
+          // btn--style을 넣어주겟다.
+          btnEl.classList.add(`btn--style3`);
+          btnEl.classList.add(`fs-xl`);
+
+        }else{  //btn-- styel이 들어가 있다면
+          btnEl.classList.remove(`btn--style3`);
+          btnEl.classList.remove(`fs-xl`);
+            // btn --style을 제거하겠다.
+        }
+      }); 
+
+
+  </script>
+
 </body>
+
 </html>
