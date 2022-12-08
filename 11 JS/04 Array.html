@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    let arr = ['test1','test2',30,true,null,{name : '홍길동', age:44}]
+    console.log(typeof arr[0]);
+    consol.log(typeof arr[1]);
+    consol.log(typeof arr[2]);
+    consol.log(typeof arr[3]);
+    consol.log(typeof arr[4]);
+    consol.log(typeof arr[5]);
+    console.log('For문 기본--------------');
+    // 1번째 방법
+    for(i=0;i<arr.length;i++){
+      console.log(arr[i]);
+    }
+
+
+
+    // let arr = ['test1','test2',30,true,null,{name:'홍길동',age:44}]
+    // console.log(typeof arr[0]);
+    // console.log(typeof arr[1]);
+    // console.log(typeof arr[2]);
+    // console.log(typeof arr[3]);
+    // console.log(typeof arr[4]);
+    // console.log(typeof arr[5]);
+    // // 1번째 방법
+    // console.log('For문 기본 ----------------');
+    // for(i=0;i<arr.length;i++){
+    //   console.log(arr[i]);
+    // }
+    // 2번째 방법
+    console.log('forEach1----------------');
+    arr.forEach(function(item){console.log(item)});
+    // 3번째 방법
+    console.log('forEach2----------------');
+    arr.forEach(item => {console.log(item)});
+    // 4번째 방법
+    console.log('object형 forEach----------------');
+    let obj = {key1:'value1', key2:'value2', key3:'value3', key4:'value4'}
+    Object.keys(obj).forEach((key)=>{console.log("K :" + key + " V  :"+ obj[key]);});
+
+    console.log();
+    console.log(Object.values(obj));
+
+  </script>
+  
+</body>
+</html>

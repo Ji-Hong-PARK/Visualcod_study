@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      background-color: orange;
+      height: 50px;
+      width: 100px;
+      margin: 10px;
+      position: relative;
+      left: 0px;
+      top: 0px;
+    }
+
+    @keyframes moving{
+      from{left:0px}
+      to{left:1500px}
+    }
+    .d1,.d2,.d3,.d4,.d5{
+      animation-name: moving;
+      animation-duration: 10s;
+      /* 계속 리플레이 */
+      animation-iteration-count: infinite;
+    }
+    .d1{
+      /* 처음부터 -> 끝까지 동일 속도 */
+      animation-timing-function: linear;
+    }
+    .d2{
+      /* 처음-천천히  중간-빠르게  끝-천천히 */
+      animation-timing-function: ease;
+    }
+    .d3{
+      /* 천천히 -> 보통속도 */
+      animation-timing-function: ease-in;
+    }
+    .d4{
+      /* 빠름 -> 천천히 */
+      animation-timing-function: ease-out;
+    }
+    .d5{
+      /* 천천히 -> 보통 -> 천천히 */
+      animation-timing-function: ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="d1">1번 경주마</div>
+  <div class="d2">2번 경주마</div>
+  <div class="d3">3번 경주마</div>
+  <div class="d4">4번 경주마</div>
+  <div class="d5">5번 경주마</div>
+  
+</body>
+</html>
