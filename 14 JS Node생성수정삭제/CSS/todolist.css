@@ -1,0 +1,276 @@
+/* 전역설정 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+
+
+button {
+  background-color: white;
+  border: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* 버튼클래스를 만들어줄거다 */
+.btn {
+  width: 120px;
+  height: 30px;
+  /* 보더라디우스 버튼을 둥글게 */
+  border-radius: 10px;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  margin: 5px;
+  /* 커서포인트를 줘서 마우스를 가져가면 손모양이되도록 */
+  cursor: pointer;
+  /* 박스에 효과를 준다. */
+  box-shadow: 2px 2px 2px gray;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  font-size: 1rem;
+  transition: 0.2s;
+
+
+}
+
+.btnicon {
+  /* border: 1px solid gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  /* 커서를 주자. */
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* TodoContainer */
+.TodoContainer {
+  width: 500px;
+  height: 600px;
+  /* 왼쪽상단으로 기본위치  */
+  position: absolute;
+  /* 정가운데 위치할라면 아래처럼 */
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  border-radius: 0 50px 0 0;
+  border: 1px solid gray;
+  /* 타이틀 밑에 부분이 좌.우 너무 붙어있어서 패딩사용 */
+  padding: 10px;
+}
+
+/* Title */
+.TodoContainer>.Title {
+  width: 100%;
+  /* 텍스트 형태는 중간으로 */
+  text-align: center;
+  margin: 10px auto;
+}
+
+.TodoContainer>.Title>h1 {
+  font-size: 3rem;
+}
+
+
+
+/* header */
+.TodoContainer>.Todo__header {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  margin-bottom: 5px;
+
+  /* 아이콘을 수직배치한다. */
+  display: flex;
+  align-items: center;
+}
+
+/* 헤더안에 있는 모든자식들을 고쳐보자. */
+.TodoContainer>.Todo__header>* {
+  height: 45px;
+  width: 45px;
+  margin: 0px 2px;
+}
+
+.TodoContainer>.Todo__header>input {
+  height: 45px;
+  width: 100%;
+}
+
+/* 헤더부분에 자식들을 1,2번으로 지정해서 고칠수있다. */
+.TodoContainer>.Todo__header>*:nth-child(1) {}
+
+.TodoContainer>.Todo__header>*:nth-child(2) {
+  outline: 0px;
+  font-size: 1.5rem;
+}
+
+.TodoContainer>.Todo__header>*:nth-child(2):focus {
+  border: 1px solid royalblue;
+  outline: 0px;
+}
+
+
+/* body */
+.TodoContainer>.Todo__body {
+  height: 400px;
+  border: 1px solid gray;
+  margin-bottom: 5px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.TodoContainer>.Todo__body>.body__Do {}
+
+
+/* -------------------------TODO----------------------- */
+.TodoContainer>.Todo__body>.body__Do>ul>li {
+  /* 바디안에있는 버튼과 스펜을 정렬한다. */
+  display: flex;
+  align-items: center;
+  height: 45px;
+  border: 1px solid gray;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.TodoContainer>.Todo__body>.body__Do>ul>li>*:nth-child(1) {
+  width: 35px;
+  height: 35px;
+
+}
+
+.TodoContainer>.Todo__body>.body__Do>ul>li>*:nth-child(2) {
+  flex-grow: 1;
+  margin: 0px 10px;
+}
+
+.TodoContainer>.Todo__body>.body__Do>ul>li>*:nth-child(3) {}
+
+.TodoContainer>.Todo__body>.body__Do>ul>li>*:nth-child(3) .btnicon {
+  /* 자식 3번째에있는 아이콘 크기를 줄일때 폰트사이즈 (바디안에 위로화살표 아래 화살표) */
+  font-size: 0.8rem;
+}
+
+
+
+
+
+
+.TodoContainer>.Todo__body>.body__Do>ul>li>*:nth-child(3):hover .btnicon {
+  font-size: 1rem;
+}
+
+
+/* ---------------------DONE----------------------- */
+
+.TodoContainer>.Todo__body>.body__Done>ul>li {
+  /* 바디안에있는 버튼과 스펜을 정렬한다. */
+  display: flex;
+  align-items: center;
+  height: 45px;
+  border: 1px solid gray;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.TodoContainer>.Todo__body>.body__Done>ul>li>*:nth-child(1) {
+  width: 35px;
+  height: 35px;
+
+}
+
+.TodoContainer>.Todo__body>.body__Done>ul>li>*:nth-child(2) {
+  flex-grow: 1;
+  margin: 0px 10px;
+}
+
+.TodoContainer>.Todo__body>.body__Done>ul>li>*:nth-child(3) {}
+
+.TodoContainer>.Todo__body>.body__Done>ul>li>*:nth-child(3) .btnicon {
+  /* 자식 3번째에있는 아이콘 크기를 줄일때 폰트사이즈 (바디안에 위로화살표 아래 화살표) */
+  /* font-size: 0.8rem; */
+}
+
+
+
+/* 배경 */
+.TodoContainer::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  background-image: url('/image/여우.png');
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
+
+
+/* footer */
+.TodoContainer>.Todo__footer {
+  height: 50px;
+  border: 1px solid gray;
+  margin-bottom: 5px;
+  /* 메뉴를 가로 배치한다. */
+  display: flex;
+  /* 메뉴마다 떨어지게. */
+  justify-content: space-between;
+  /* 수직정렬 */
+  align-items: center;
+
+}
+
+/* ANUMATION */
+@keyframes ToDone {
+  from {
+    transform: perspective(80px) rotateX(0deg)
+  }
+
+  to {
+    transform: perspective(80px) rotateX(360deg); overflow: hidden;
+  }
+}
+
+@keyframes DoneTo {
+  from {
+    transform: perspective(80px) rotateX(-360deg)
+  }
+
+  to {
+    transform: perspective(80px) rotateX(0deg); overflow: hidden;
+  }
+}
