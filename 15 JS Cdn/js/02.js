@@ -22,7 +22,7 @@ new Swiper('section>.main-banner>.inner>.swiper',{
 
 
   // 마우스 휠 효과
-  mousewheel : true,
+  mousewheel : false,
   effect : 'fade',
   speed : 3000,  //3초간격으로 변환.
 
