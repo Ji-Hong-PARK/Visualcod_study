@@ -1,38 +1,30 @@
-
-new Swiper('section>.main-banner>.inner>.swiper',{
+new Swiper('.main-banner .swiper',{
   direction:'horizontal', //수평 슬라이드(기본)
   autoplay:{            //시작시 바로 재생 여부
-      delay:3000,
+      delay:1000,
       disableOnInteraction:false //사용자의 action에 따른 슬라이드 동작 정지여부
   },
   loop:true, //무한재생
 
   // navigation 
   navigation:{
-    prevEl:'section>.main-banner>.inner>.swiper>.swiper-button-prev',
-    nextEl:'section>.main-banner>.inner>.swiper>.swiper-button-next'
+    prevEl:'.main-banner .swiper-button-prev',
+    nextEl:'.main-banner .swiper-button-next'
   },
-  
-  //pagenation
-  pagenation:{
-    el:'section>.main-banner>.inner>.swiper>.swiper-pagination', //'selector'대신 주소를 붙여넣는다.
+  //pagination
+  pagination:{
+    el:'.main-banner .swiper-pagination',
     type:'fraction', //bullets,progressbar,fraction
     clickable:'true'
-  } ,
-
-
+  },
   // 마우스 휠 효과
-  mousewheel : false,
+  mousewheel:false,
   effect : 'fade',
-  speed : 3000,  //3초간격으로 변환.
-
-
-  // 스크롤바
+  speed:1000,
+  
+  // 스크롤 바 
   scrollbar:{
-    el:'.main-banner .swiper-scrollbar',    //'selector',
-    draggable : true
+    el:'.main-banner .swiper-scrollbar',
+    draggable:true
   }
-
-
-
 });

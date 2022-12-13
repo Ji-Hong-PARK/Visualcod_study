@@ -1,24 +1,28 @@
-const badgeEl = document.querySelector('section>.sticky-banner');
 
-// window.addEventListener('scroll', function(){
-//   // console.log('scroll!!');
-//   console.log(window.scrollY);
+
+
+const badgeEl=document.querySelector('section>.sticky-banner');
+const gnbSecondEl = document.querySelector('.gnb-second');
+// window.addEventListener('scroll',function(){
+//   console.log('scroll!!');
+//   // console.log(window.scrollY);
 // })
 
-//.throttle(함수, 지연시간) 0.3초단위로 실행될수있게 한다.
+// _.throttle(함수,시간)
+
 window.addEventListener('scroll',_.throttle(function(){
-  console.log('scroll!!');
-  if(window.scrollY > 700){
+  // console.log('scroll!!');
+  console.log(window.scrollY);
+  if(window.scrollY>700 ){
     //배지 숨기기
-    badgeEl.Style.display='neno';
-    badgeEl.Style.animationName='bgdown';
-    badgeEl.Style.animationDuration='1s';
+    badgeEl.classList.add('badge--hidden');
+    badgeEl.classList.remove('badge--show');
+   
   }else{
     //배지 표시하기
-    badgeEl.Style.display='block';
-    badgeEl.Style.animationName='bgup';
-    badgeEl.Style.animationDuration='1s';
+    badgeEl.classList.add('badge--show');
+    badgeEl.classList.remove('badge--hidden');
+   
   }
-
 
 },300));

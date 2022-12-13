@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nanum Gothick', sans-serif;
+  font-size: 1.2rem;
+  height: 7000px;
+}
+
+.inner{
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  /* background-color: orange; */
+}
