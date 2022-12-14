@@ -1,0 +1,30 @@
+.contents{
+  margin-bottom:5px;
+}
+.contents>.main-contents{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+/* 메인화면 동영상 넣기 */
+.main-contents>video{
+  width: 100%;
+  /* 브라우저의 가로 100%만큼 픽셀을 이용하겠다고 적음 */
+  height: 100%;
+  /* 브라우저의 세로 90%만큼 픽셀을 이용하겠다고 적음 */
+  object-fit: fill;
+  opacity: 0.8;
+  z-index: -1;
+}
+.main-contents> ul{
+  display: flex; /*메뉴 가로 형태로 만들기 */
+  justify-content: space-evenly; /*메뉴 위치 */
+  font-size: 5em; /*픽셀수만큼 글자가 커짐.*/
+  list-style: none; /*리스트 앞에 점 없애기.*/
+  padding: 0%; /*패딩공간 0으로 만들어주기*/
+  color: white; /*글자 색 정하기.*/
+  position: absolute;
+}

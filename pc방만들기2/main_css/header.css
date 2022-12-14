@@ -1,0 +1,47 @@
+header {
+  height: 100px;
+  /* border:1px solid gray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+header>#logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+}
+
+header>ul {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+header>ul {
+  border: 2px solid blue;
+}
+
+header>ul>.이용석 {
+  height: 60px;
+  width: 90px;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+header>ul>.좌석수 {
+  height: 60px;
+  width: 90px;
+  border-radius: 20px;
+  background-color: lightgray;
+}
