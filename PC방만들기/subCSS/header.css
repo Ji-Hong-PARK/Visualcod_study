@@ -1,0 +1,71 @@
+/* header */
+header{}
+
+header>.inner{ }
+
+header>.inner>.gnb-top>.header-banner{ /*메인화면 배너 부분  pc방 로고와 글자가 들어갈곳!*/
+  height: 90px;
+  border : 5px solid red;
+  
+}
+
+/* gnb-top */
+header>.inner>.gnb-top{
+  height : 42px;
+  border : 5px solid blue;
+  
+}
+
+header>.inner>.gnb-top>.header-banner>.swiper{
+  height : 42px;
+  
+}
+header>.inner>.gnb-top>.header-banner>.swiper>.swiper-wrapper{}
+
+header>.inner>.gnb-top>.header-banner>.swiper>.swiper-wrapper>.swiper-slide{
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  position:relative;
+}
+header>.inner>.gnb-top>.header-banner>.swiper>.swiper-wrapper>.swiper-slide img{
+
+  
+}
+header>.inner>.gnb-top{}
+
+
+header>.inner>.gnb-top>.sub-menu{
+  border : 1px solid yellow;
+}
+
+
+/* gnb-second */
+header>.inner>.gnb-second{
+  height : 86px;
+  border : 5px solid green;
+}
+
+/* gnb */
+header>.inner>.gnb{
+  height : 60px;
+  border : 1px solid violet;
+}
+header>.inner>.gnb>.header-banner>.swiper>.swiper-wrapper>.swiper-slide span{
+  font-size:0.7rem;
+  padding-left:5px;
+  border : 5px solid orange;
+  position: absolute;
+
+}
+
+header>.inner>.gnb>.swiper>.swiper-wrapper>.swiper-slide img{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+header>.inner>.gnb>.swiper>.swiper-wrapper span{
+  right: 20px;
+  display: flex;
+  /* border: 10px solid black; */
+}

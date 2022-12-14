@@ -1,0 +1,114 @@
+
+
+nav {
+  height: 100px;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: red;
+}
+
+nav>* {
+  /* border : 1px solid gray; */
+  height: 50px;
+  flex: 1 0 170px;
+}
+
+nav>.leftmenu {
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+
+
+nav>.leftmenu>img {
+  width: 50px;
+  height: 50px;
+  /* border : 1px solid gray; */
+  display: block;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+nav>.leftmenu>span{
+  font-size: 1.2rem;
+  width: 300px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+
+nav>.rightmenu {
+  flex-grow: 2;
+}
+
+
+/* MediaQuery 적용 위한 추가 CSS */
+nav span {
+  font-size: 2rem;
+}
+
+nav .leftmenu,
+.rightmenu {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav .rightmenu {
+  justify-content: space-between;
+}
+
+nav .rightmenu>div:nth-child(1) {
+  flex-grow: 2;
+  text-align: center;
+}
+
+nav .rightmenu>div:nth-child(2) {
+  flex-grow: 0;
+}
+
+/* MediaQuery 적용 */
+
+/* @media all and (max-width:1024px) {
+  nav span {
+    display: none;
+  }
+}
+
+@media all and (max-width:768px) {
+
+
+  nav .rightmenu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+  }
+
+  nav .leftmenu {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav .center {
+    width: 0px;
+  }
+
+  header {
+    display: none;
+  }
+} */
