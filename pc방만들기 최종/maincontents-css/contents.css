@@ -1,0 +1,62 @@
+.contents{
+  /* margin-bottom:5px; */
+}
+.contents>.main-contents{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+/* 메인화면 동영상 넣기 */
+.main-contents>video{
+  width: 100%;
+  /* 브라우저의 가로 100%만큼 픽셀을 이용하겠다고 적음 */
+  height: 100%;
+  /* 브라우저의 세로 90%만큼 픽셀을 이용하겠다고 적음 */
+  object-fit: fill;
+  opacity: 0.7;
+  z-index: -1;
+}
+.main-contents> .btn{
+  height: 200px;
+  border-radius: 50px;
+  display: flex; /*메뉴 가로 형태로 만들기 */
+  justify-content: space-evenly; /*메뉴 위치 */
+  font-size: 7em; /*픽셀수만큼 글자가 커짐.*/
+  padding: 0%; /*패딩공간 0으로 만들어주기*/
+  position: absolute;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn>a{
+  text-decoration-line: none;
+  color: white;
+}
+
+.btn>a:link :visited{
+  color: white;
+  text-decoration-line: none;
+}
+
+.btn:hover{
+  border: 1px solid gray;
+  background-color: whitesmoke;
+  opacity: 0.5;
+}
+.btn>a:hover{
+  color: gray;
+}
+
+.btn>a:active{
+  color: gray;
+  font-size: 10rem;
+}
+.btn:active{
+  background-color: whitesmoke;
+  opacity: 0.5;
+}
+
+.fx-xl{}

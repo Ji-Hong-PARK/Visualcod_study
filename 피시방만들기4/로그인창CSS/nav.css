@@ -1,0 +1,93 @@
+nav {
+  height: 60px;
+  /* border: 2px solid gray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 5px; */
+  background-color: red;
+}
+
+nav>* {
+  /* border : 1px solid gray; */
+  height: 50px;
+  flex: 1 0 170px;
+}
+
+nav>.leftmenu {
+  flex-grow: 0.4;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+nav>.leftmenu>.swiper{
+  height: 70px;
+}
+
+nav>.leftmenu>.swiper>.swiper-wrapper>.swiper-slide{
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  position:relative;
+}
+nav>.leftmenu>.swiper>.swiper-wrapper>.swiper-slide img{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+nav>.leftmenu>.swiper>.swiper-wrapper>.swiper-slide span{
+  font-size:1.2rem;
+  padding-left:5px;
+}
+
+nav>.rightmenu {
+  flex-grow: 0.4;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  display:flex;
+  color: white;
+}
+
+nav .leftmenu{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav>.rightmenu>.money>span{
+  vertical-align: text-bottom;
+}
+
+nav .rightmenu{
+  justify-content: space-between;
+  
+}
+
+nav .rightmenu>div:nth-child(1) {
+  flex-grow: 2;
+  text-align: center;
+}
+
+nav .rightmenu>div:nth-child(2) {
+  flex-grow: 1;
+}
+nav .rightmenu>div:nth-child(3) {
+  flex-grow: 1;
+  text-align: right;
+  height: 60px;
+  width: 190px;
+  background-color: black;
+  /* border: 1px solid violet; */
+}
+

@@ -1,0 +1,99 @@
+header{
+  height:90px;
+  display:flex;
+  justify-content:space-between;
+  align-items : center;
+  margin-bottom : 5px;
+  /* border: 2px solid violet; */
+}
+header>#logo{
+  display:flex;
+  justify-content:center;
+  align-items : center;
+  margin-top : 5px;
+  font-size: 3rem;
+  cursor: pointer;
+  /* border: 2px solid green; */
+}
+header img{
+  width: 90px;
+  height: 90px;
+  /* border: 2px solid violet; */
+}
+header i{
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+
+
+#wrapper>header>.s1{ /*컴퓨터 아이콘 + 이용석 + 001 좌표*/
+  /* border: 2px solid violet; */
+  display: flex;
+  margin-left: 60%;  
+  height: 90px;
+}
+#wrapper>header>.s1>.s2{ /*이용석과 001을 같이 묶은것*/
+position: static;
+width: 100px;
+height: 60px;
+margin-left: 20%;  
+}
+#wrapper>header>.s1>.s2>.p1{  /*이용석 보더 좌표*/
+  margin-top: 5px;
+  width: 100px;
+  height: 20px; 
+}
+#wrapper>header>.s1>.s2>.p1> p{  /*이용석 p태그 좌표*/
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+#wrapper>header>.s1>.s2>.p2{  /*001 보더 좌표*/
+  width: 100px;
+  height: 60px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+#wrapper>header>.s1>.s2>.p2> p{ /*001 p태그 좌표*/
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+/* 좌석수 */
+#wrapper>header>.s3>.p1{  /*이용석 보더 좌표*/
+  margin-top: 5px;
+  width: 100px;
+  height: 20px; 
+}
+#wrapper>header>.s3>.p1> p{  /*이용석 p태그 좌표*/
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+#wrapper>header>.s3>.p2{  /*001 보더 좌표*/
+  width: 100px;
+  height: 60px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+#wrapper>header>.s3>.p2> p{ /*001 p태그 좌표*/
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}

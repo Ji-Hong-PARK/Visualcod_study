@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코리아PC방</title>
+  <!-- reset.css cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!-- common.css -->
+  <link rel="stylesheet" href="mainmenu-css/common.css">
+  <!-- header.css -->
+  <link rel="stylesheet" href="mainmenu-css/header.css">
+  <!-- nav.css -->
+  <link rel="stylesheet" href="mainmenu-css/nav.css">
+  <!-- contents.css -->
+  <link rel="stylesheet" href="mainmenu-css/contents.css">
+  <!-- footer.css -->
+  <link rel="stylesheet" href="mainmenu-css/footer.css">
+
+  <!-- BS5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- favicon -->
+  <link rel="icon" href="image/pc2.png">
+
+  <!-- 오른쪽 메인 배너 스와이프  -->
+  <script src="./js/slide.js"></script> <!-- 배너 슬라이드를 쓰기위한 스크립트 연결코드-->
+
+</head>
+
+<body>
+
+  <!-- Sementic Tag -->
+  <!-- 
+    header : 헤더 영역
+    nav : 네비게이션 바(메뉴) 영역
+    article : 보통 제목 태그와 문단 태그를 포함, 개별 콘텐츠에 사용하는 태그
+    aside : 사이드 영역 태그
+    section : article보다 큰 영역을 나타낼때 사용하는 태그
+    footer : 푸터 영역,회사 정보등을  포함
+  -->
+
+  <div id="wrapper">
+    <header>
+      <div id="logo"><img src="image/pc1.png" alt="LOGO">
+        <h1>KoreaPC</h1>
+      </div>
+      <div>
+        <i class="bi bi-display"></i>
+        <ul>
+          <li>이용석</li>
+          <li>좌석수</li>
+        </ul>
+      </div>
+    </header>
+
+    <nav>
+      <div class="leftmenu">
+        <img src="image/pc2.png" alt="LOGO1">
+        <div class="문구돌아가">
+          <span>회원이 아니시라면 회원가입을 해주세요.</span>
+          <!-- <span>안녕하세요. 로그인하셨더라면 요금을 선택해주세요.</span>
+        <span>안녕하세요. 청소년은 10시 이후로 게임을 못합니다.</span> -->
+        </div>
+      </div>
+
+
+      <div class="rightmenu">
+        <div>
+          <i class="bi bi-person"></i>
+          <span>로그인</span>
+        </div>
+        <div>
+          <i class="bi bi-person-plus"></i>
+          <span>회원가입</span>
+        </div>
+        <!--  -->
+        <div class="money">
+          <span>0원</span>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="contents">
+      <!-- <div class="main-banner"></div> -->
+      <div class="main-contents">
+        <section class="buttons">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </section>
+      </div>
+      <!-- ---------------------------------------여기서 부터는  오른쪽  배너 + 버튼 을 만들꺼임. -->
+      
+      <div class="sub-contents">
+
+        <div class="slide slide_wrap">
+          <div class="slide_item item1">1</div>
+          <div class="slide_item item2">2</div>
+          <div class="slide_item item3">3</div>
+          <div class="slide_item item4">4</div>
+          <div class="slide_item item5">5</div>
+          <div class="slide_prev_button slide_button">◀</div>
+          <div class="slide_next_button slide_button">▶</div>
+          <ul class="slide_pagination"></ul>
+        </div>
+
+        
+     
+        
+
+
+
+
+      </div> <!-- sub-컨텐츠 마지막 태그-->
+    </div> <!-- 컨텐츠 마지막 태그-->
+
+
+
+
+
+
+
+
+
+
+    <footer></footer>
+  </div>
+
+</body>
+
+</html>

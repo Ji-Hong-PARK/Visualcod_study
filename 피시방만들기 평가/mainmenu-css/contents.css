@@ -1,0 +1,41 @@
+.contents{
+  width: 300px;
+  /* margin-bottom:5px; */
+}
+.contents>.main-contents{
+  height:600px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.main-contents>aside{
+  border : 1px solid gray;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 200px;
+}
+.main-contents>section{
+
+  border : 1px solid gray;
+  /* 상위 flex와 연결된 설정 */
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 800px;
+  /* 상위 flex와 연결된 설정 */
+  
+  /* 하위 items의 flex */
+  display:flex;
+  flex-wrap: wrap;
+  justify-content : center;
+  align-items: center;
+  overflow : auto;
+  /* 하위 items의 flex */
+}
+section>.item{
+  flex:1 0 180px;
+  /* width: 150px; */
+  height :150px;
+  margin:10px;
+  border : 1px solid gray;
+  border-radius: 10%;
+}

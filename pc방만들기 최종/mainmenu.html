@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코리아PC방</title>
+  <!-- reset.css cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- common.css -->
+  <link rel="stylesheet" href="main-css/common.css">
+  <!-- header.css -->
+  <link rel="stylesheet" href="main-css/header.css">
+  <!-- nav.css -->
+  <link rel="stylesheet" href="mainmenu-css/nav.css">
+  <!-- contents.css -->
+  <link rel="stylesheet" href="mainmenu-css/contents.css">
+  <!-- footer.css -->
+  <link rel="stylesheet" href="main-css/footer.css">
+
+  <!-- BS5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- favicon -->
+  <link rel="icon" href="image/pc2-2.png">
+
+  <!-- swiper js 연결 -->
+  <script defer src="js/swiper.js"></script>
+
+  <!-- timebutton js 연결 -->
+  <script defer src="js/menubutton.js"></script>
+
+  <!-- mypage popup js 연결 -->
+  <script defer src="js/mypagepopup.js"></script>
+
+  <!-- Swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"
+    integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body>
+
+  <!-- Sementic Tag -->
+  <!-- 
+    header : 헤더 영역
+    nav : 네비게이션 바(메뉴) 영역
+    article : 보통 제목 태그와 문단 태그를 포함, 개별 콘텐츠에 사용하는 태그
+    aside : 사이드 영역 태그
+    section : article보다 큰 영역을 나타낼때 사용하는 태그
+    footer : 푸터 영역,회사 정보등을  포함
+  -->
+
+  <div id="wrapper">
+    <header>
+      <div id="logo" onclick="location.href='index.html'"><img src="image/pc1.png" alt="LOGO">
+        <h1>KoreaPC</h1>
+      </div>
+      <div class="s1"><i class="bi bi-display"></i>
+        <div class="s2">
+          <div class="p1">
+            <p>이용석</p>
+          </div>
+          <div class="p2">
+            <p>001</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="s3">
+        <div class="p1">
+          <p>좌석수</p>
+        </div>
+        <div class="p2">
+          <p>063</p>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="leftmenu">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="image/pc2-3.png" alt=""><span>회원이 아니시라면 회원가입을 해주세요.</span></div>
+            <div class="swiper-slide"><img src="image/pc2-3.png" alt=""><span>안녕하세요. 로그인하셨더라면 요금을 선택해주세요.</span></div>
+            <div class="swiper-slide"><img src="image/pc2-3.png" alt=""><span>안녕하세요. 청소년은 10시 이후로 게임을 못합니다.</span></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="rightmenu">
+        <div>
+          <i class="bi bi-person"></i>
+          <span>로그아웃</span>
+        </div>
+        <div class="money">
+          <span>0원</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="contents">
+      <div class="main-contents">
+        <section>
+          <div class="item" onclick="timebutton()">
+            <div class="price">
+              <span>1시간</span>
+              <p>(1:00)</p>
+              <h2>1,000원</h2>
+            </div>
+          </div>
+          <div class="item" onclick="timebutton()">
+            <div class="price">
+              <span>2시간</span>
+              <p>(2:00)</p>
+              <h2>2,000원</h2>
+            </div>
+          </div>
+          <div class="item" onclick="timebutton()">
+            <div class="price">
+              <span>3시간</span>
+              <p>(3:00)</p>
+              <h2>3,000원</h2>
+            </div>
+          </div>
+          <div class="item" onclick="timebutton()">
+            <div class="price">
+              <span>4시간</span>
+              <p>(4:00)</p>
+              <h2>4,000원</h2>
+            </div>
+          </div>
+          <div class="item" onclick="timebutton()">
+            <div class="price">
+              <span>5시간</span>
+              <p>(5:00)</p>
+              <h2>5,000원</h2>
+            </div>
+          </div>
+          <div class="item" onclick="timebutton()">
+            <div class="price">
+              <span>6시간</span>
+              <p>(6:00)</p>
+              <h2>6,000원</h2>
+            </div>
+          </div>
+          <div class="item" onclick="timebutton()">
+            <div class="price">
+              <span>7시간</span>
+              <p>(7:00)</p>
+              <h2>7,000원</h2>
+            </div>
+          </div>
+          <div class="item" onclick="timebutton()">
+            <div class="price">
+              <span>8시간</span>
+              <p>(8:00)</p>
+              <h2>8,000원</h2>
+            </div>
+          </div>
+          <div class="item" onclick="timebutton()">
+            <div class="price">
+              <span>9시간</span>
+              <p>(9:00)</p>
+              <h2>9,000원</h2>
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+      <div class="sub-contents">
+        <div class="banner">
+          <div class="inner">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="mban1">
+                    <img src="image/pc1.png" alt="">
+                    <h2>전국No.1 koreaPC</h2>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mban2">
+                    <div class="joy">
+                      <img src="bannerimg/game.jpg" alt="logo">
+                    </div>
+                    <div class="text1">
+                      <h2>조이스틱 대여</h2>
+                      <p>카운터로 문의주세요.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sub-b">
+          <div class="btnb">
+            <div class="btn popup" onclick="openWin()"><p>나의정보</p></div>
+            <div class="btn managercall" onclick="macbutton()"><p>관리자호출</p></div>
+            <div class="btn payment" onclick="timebutton()"><p>카드결제</p></div>
+          </div>
+        </div>
+      </div> 
+
+    </div>
+
+
+
+
+    <footer>
+      <div class="ft">
+        <a href='/' target='_self'>Blog</a>
+        <a href='/' target='_self'>Github</a>
+      </div>
+      <p>
+        <span>회사명 : KoreaPC</span>
+        <span>Copyright 2022. KoreaPC. All Rights Reserved.</span>
+      </p>
+    </footer>
+   
+  </div>
+
+</body>
+
+</html>

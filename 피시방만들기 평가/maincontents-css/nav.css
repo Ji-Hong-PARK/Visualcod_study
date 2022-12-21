@@ -1,0 +1,100 @@
+nav {
+  width: 100%;
+  height: 60px;
+  /* border: 2px solid gray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 5px; */
+  background-color: red;
+}
+
+nav>* {
+  /* border : 1px solid gray; */
+  height: 50px;
+  flex: 1 0 170px;
+}
+
+nav>.leftmenu {
+  flex-grow: 0.4;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+nav>.leftmenu>.swiper{
+  height: 70px;
+}
+
+nav>.leftmenu>.swiper>.swiper-wrapper>.swiper-slide{
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  position:relative;
+}
+nav>.leftmenu>.swiper>.swiper-wrapper>.swiper-slide img{
+  width: 70px;
+  height: 70px;
+  /* border : 1px solid gray; */
+  display: block; 
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+nav>.leftmenu>.swiper>.swiper-wrapper>.swiper-slide span{
+  font-size:1.2rem;
+  padding-left:5px;
+}
+
+
+
+nav>.rightmenu {
+  flex-grow: 0.4;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* MediaQuery 적용 위한 추가 CSS */
+nav>.rightmenu span {
+  font-size: 2rem;
+}
+
+nav .leftmenu,
+.rightmenu {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+nav .rightmenu{
+  justify-content: space-between;
+}
+
+nav .rightmenu>div:nth-child(1) {
+  flex-grow: 2;
+  text-align: center;
+}
+
+nav .rightmenu>div:nth-child(2) {
+  flex-grow: 1;
+}
+nav .rightmenu>div:nth-child(3) {
+  margin-left: 10px;
+  flex-grow: 0;
+  text-align: right;
+  height: 60px;
+  width: 190px;
+  background-color: black;
+  
+  /* border: 5px solid black; */
+}
+nav .rightmenu .money>span{
+  color: white;
+  vertical-align: text-bottom;
+  
+}
